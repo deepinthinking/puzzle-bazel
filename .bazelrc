@@ -2,5 +2,9 @@
 common --java_language_version=21 --java_runtime_version=21
 common --tool_java_language_version=21 --tool_java_runtime_version=21
 
+# Bazel Registries
+common --registry=file://%workspace%/registries/deepinthinking/
+common --registry=file://%workspace%/registries/central/
+
 # User-specific .bazelrc
 try-import %workspace%/user.bazelrc

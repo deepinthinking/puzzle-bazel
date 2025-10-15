@@ -5,3 +5,4 @@ Make Google Bazel easier to use.
 | Registry | Description | URL |
 |:---|:---|:---|
 | Central | Bazel Central Registry(BCR) | https://raw.githubusercontent.com/deepinthinking/puzzle-bazel/refs/heads/registries/central/ |
+| DeepInThinking | Bazel DeepInThinking Registry(BDR) | https://raw.githubusercontent.com/deepinthinking/puzzle-bazel/refs/heads/registries/deepinthinking/ |
