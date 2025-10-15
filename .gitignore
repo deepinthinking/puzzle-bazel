@@ -5,3 +5,6 @@
 bazel-*
 MODULE.bazel.lock
 user.bazelrc
+
+# Registries
+registries_publish/
