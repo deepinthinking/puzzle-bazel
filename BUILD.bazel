@@ -1,0 +1,24 @@
+load("@rules_license//rules:license.bzl", "license")
+
+package(
+    default_applicable_licenses = [":license"],
+    default_visibility = ["//visibility:public"],
+)
+
+exports_files([
+    "LICENSE.txt",
+    "NOTICE.txt",
+])
+
+license(
+    name = "license",
+    package_name = "@org_deepinthinking_puzzle_bazel",
+    copyright_notice = "Copyright (c) 2025-present DeepInThinking",
+    license_kinds = [
+        "@rules_license//licenses/spdx:Apache-2.0",
+    ],
+    license_text = "//:LICENSE.txt",
+    package_url = "https://github.com/deepinthinking/puzzle-bazel",
+    package_version = "2025.0.0-SNAPSHOT",
+    visibility = ["//visibility:public"],
+)

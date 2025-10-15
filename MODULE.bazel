@@ -1,0 +1,9 @@
+""" Puzzle Bazel """
+module(
+    name = "puzzle-bazel",
+    repo_name = "org_deepinthinking_puzzle_bazel",
+    compatibility_level = 1,
+    version = "2025.0.0-SNAPSHOT",
+)
+
+bazel_dep(name = "rules_license", version = "1.0.0")
