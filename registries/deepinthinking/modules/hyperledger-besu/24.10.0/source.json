@@ -4,8 +4,8 @@
   "strip_prefix": "besu-24.10.0",
   "patch_strip": 0,
   "overlay": {
-    "BUILD.bazel": "",
-    "MODULE.bazel": "",
-    "defs.bzl": ""
+    "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
+    "MODULE.bazel": "sha256-nItdrBKbBpMoT0Ut3EfagBmFPBM4UCIRNMVf+Xbx/2I=",
+    "defs.bzl": "sha256-NomSIdM2A1b85m4nf0b/eVPZi7S6SNb4SmObyC1qMqc="
   }
 }

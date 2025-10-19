@@ -1,11 +1,12 @@
-load("@besu_contrib//thirdparty/maven/dagger:defs.bzl", "dagger_rules")
-load("@besu_contrib//thirdparty/maven/immutables:defs.bzl", "immutables_rules")
-load("@rules_java//java:defs.bzl", "java_library")
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
 load("@rules_jvm_external//:defs.bzl", "artifact")
 
 def besu_rules(repo_name = "besu_maven_24100"):
-    immutables_rules(repo_name = "@%s" % repo_name)
-    dagger_rules(repo_name = "@%s" % repo_name)
+    java_binary(
+        name = "besu_app",
+        main_class = "org.hyperledger.besu.Besu",
+        runtime_deps = [":besu"],
+    )
 
     java_library(
         name = "besu",
@@ -20,7 +21,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":consensus_qbft",
             ":crypto_algorithms",
             ":crypto_services",
-            ":dagger",
+            "@dagger//:dagger",
             ":datatypes",
             ":enclave",
             ":ethereum_api",
@@ -35,7 +36,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":ethereum_stratum",
             ":ethereum_trie",
             ":evm",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":metrics_core",
             ":nat",
             ":pki",
@@ -82,7 +83,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
         resources = native.glob(["config/src/main/resources/**"]),
         deps = [
             ":datatypes",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":util",
             artifact("org.slf4j:slf4j-api", repo_name),
             artifact("com.fasterxml.jackson.core:jackson-core", repo_name),
@@ -312,7 +313,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":metrics_core",
             ":nat",
             ":plugin_api",
@@ -383,13 +384,13 @@ def besu_rules(repo_name = "besu_maven_24100"):
         deps = [
             ":config",
             ":crypto_algorithms",
-            ":dagger",
+            "@dagger//:dagger",
             ":datatypes",
             ":enclave",
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":metrics_core",
             ":plugin_api",
             ":services_kvstore",
@@ -428,7 +429,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
         srcs = native.glob(["ethereum/eth/src/main/java/**/*.java"]),
         deps = [
             ":config",
-            ":dagger",
+            "@dagger//:dagger",
             ":datatypes",
             ":ethereum_core",
             ":ethereum_p2p",
@@ -436,7 +437,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":metrics_core",
             ":plugin_api",
             ":services_kvstore",
@@ -473,7 +474,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":ethereum_eth",
             ":ethereum_p2p",
             ":evm",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":plugin_api",
             ":util",
             artifact("org.slf4j:slf4j-api", repo_name),
@@ -498,7 +499,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":datatypes",
             ":ethereum_core",
             ":ethereum_rlp",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":metrics_core",
             ":nat",
             ":pki",
@@ -628,7 +629,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":crypto_algorithms",
             ":datatypes",
             ":ethereum_rlp",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             ":plugin_api",
             artifact("org.immutables:value-annotations", repo_name),
             artifact("com.google.guava:guava", repo_name),
@@ -647,7 +648,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
             ":crypto_algorithms",
             ":ethereum_rlp",
             ":ethereum_trie",
-            ":immutables_value",
+            "@immutables//:immutables_value",
             artifact("org.immutables:value-annotations", repo_name),
             artifact("com.google.guava:guava", repo_name),
             artifact("io.opentelemetry:opentelemetry-api", repo_name),
@@ -687,7 +688,7 @@ def besu_rules(repo_name = "besu_maven_24100"):
         name = "metrics_core",
         srcs = native.glob(["metrics/core/src/main/java/**/*.java"]),
         deps = [
-            ":dagger",
+            "@dagger//:dagger",
             ":plugin_api",
             artifact("org.slf4j:slf4j-api", repo_name),
             artifact("com.google.guava:guava", repo_name),
