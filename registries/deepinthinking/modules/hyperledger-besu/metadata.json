@@ -1,0 +1,18 @@
+{
+  "homepage": "https://github.com/hyperledger/besu",
+  "maintainers": [
+    {
+      "email": "tingyan.shen@gmail.com",
+      "github": "tingyanshen",
+      "github_user_id": 81901872,
+      "name": "Tingyan Shen"
+    }
+  ],
+  "repository": [
+    "github:hyperledger/besu"
+  ],
+  "versions": [
+    "24.10.0"
+  ],
+  "yanked_versions": {}
+}

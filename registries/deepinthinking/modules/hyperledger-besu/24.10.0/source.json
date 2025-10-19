@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/hyperledger/besu/archive/refs/tags/24.10.0.tar.gz",
+  "integrity": "",
+  "strip_prefix": "besu-24.10.0",
+  "patch_strip": 0,
+  "overlay": {
+    "BUILD.bazel": "",
+    "MODULE.bazel": "",
+    "defs.bzl": ""
+  }
+}
