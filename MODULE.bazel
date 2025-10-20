@@ -7,4 +7,3 @@ module(
 )
 
 bazel_dep(name = "rules_license", version = "1.0.0")
-bazel_dep(name = "hyperledger-besu", version = "24.10.0")

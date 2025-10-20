@@ -1,8 +1,7 @@
 """ Hyperledger Besu """
 module(
-    name = "hyperledger-besu",
+    name = "besu",
     version = "24.10.0",
-    repo_name = "hyperledger_besu",
     compatibility_level = 24100,
 )
 
