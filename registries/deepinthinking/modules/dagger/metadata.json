@@ -12,6 +12,7 @@
       "github:google/dagger"
   ],
   "versions": [
+      "2.45",
       "2.52"
   ],
   "yanked_versions": {}
