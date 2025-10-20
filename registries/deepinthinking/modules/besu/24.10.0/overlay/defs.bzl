@@ -1,7 +1,7 @@
 load("@rules_java//java:defs.bzl", "java_binary", "java_library")
 load("@rules_jvm_external//:defs.bzl", "artifact")
 
-def besu_rules(repo_name = "besu_maven_24100"):
+def besu_rules(repo_name = "besu_maven_241000"):
     java_binary(
         name = "besu_app",
         main_class = "org.hyperledger.besu.Besu",

@@ -4,8 +4,8 @@
   "strip_prefix": "besu-24.10.0",
   "overlay": {
     "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
-    "MODULE.bazel": "sha256-dvER22FffHjL/mUnrABsmyaPIb0aXZoHW504IpjXeLc=",
-    "defs.bzl": "sha256-NomSIdM2A1b85m4nf0b/eVPZi7S6SNb4SmObyC1qMqc="
+    "MODULE.bazel": "sha256-MdroD7qk084ecvhR9V+NT/QwBdqcX1NMQqgy7Zc/xXQ=",
+    "defs.bzl": "sha256-sGBBxwtcMn3tttjHalJftcdgr94UOwgOnXOZ48u58NM="
   },
   "patch_strip": 1,
   "patches": {

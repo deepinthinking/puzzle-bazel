@@ -2,7 +2,7 @@
 module(
     name = "besu",
     version = "24.10.0",
-    compatibility_level = 24100,
+    compatibility_level = 241000,
 )
 
 BESU_JAVA_ARTIFACTS = [
@@ -150,10 +150,10 @@ bazel_dep(name = "immutables", version = "2.10.1")
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 
 maven.install(
-    name = "besu_maven_24100",
+    name = "besu_maven_241000",
     artifacts = BESU_JAVA_ARTIFACTS,
     repositories = MAVEN_REPOSITORIES,
     strict_visibility = True,
 )
 
-use_repo(maven, "besu_maven_24100")
+use_repo(maven, "besu_maven_241000")

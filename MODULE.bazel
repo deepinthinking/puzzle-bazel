@@ -8,5 +8,5 @@ module(
 
 bazel_dep(name = "rules_license", version = "1.0.0")
 # bazel_dep(name = "dagger", version = "2.52")
-bazel_dep(name = "immutables", version = "2.9.3")
-# bazel_dep(name = "besu", version = "24.10.0")
+# bazel_dep(name = "immutables", version = "2.9.3")
+bazel_dep(name = "besu", version = "24.10.0")
