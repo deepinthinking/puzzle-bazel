@@ -1,6 +1,6 @@
 """ Google Dagger"""
 module(
-    name = "immutables",
+    name = "immutables-immutables",
     version = "2.10.1",
     compatibility_level = 2101,
 )

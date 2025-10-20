@@ -7,3 +7,4 @@ module(
 )
 
 bazel_dep(name = "rules_license", version = "1.0.0")
+bazel_dep(name = "immutables-immutables", version = "2.10.1")
