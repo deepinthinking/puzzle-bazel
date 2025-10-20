@@ -4,8 +4,8 @@
   "strip_prefix": "immutables-2.11.1",
   "patch_strip": 0,
   "overlay": {
-    "BUILD.bazel": "sha256-nJnJqlvB/+sZUQ1viYZpQNsrCvdeg4n5LD5YgKxzp0o=",
-    "MODULE.bazel": "sha256-QEWqc7qRdesC2UIPoBJVSxGhtuoztJnwk3CJ9lMaAxc=",
+    "BUILD.bazel": "sha256-PtpE+uf7xl4pecgeh0uw3t8tZKvhpyszbDCQDNrM5CQ=",
+    "MODULE.bazel": "sha256-zlFBtIY1Dpowl1Td6Xir06oSMBi5oUxOOGc4IJG9jIE=",
     "defs.bzl": "sha256-DM4qAuXQMWnfQVhEvtys7N2cvwaTVVO/mo3w+NrAONI="
   }
 }
