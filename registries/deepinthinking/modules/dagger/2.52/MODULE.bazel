@@ -1,6 +1,6 @@
 """ Google Dagger"""
 module(
-    name = "google-dagger",
+    name = "dagger",
     version = "2.52",
     compatibility_level = 252,
 )
