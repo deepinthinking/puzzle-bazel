@@ -2,7 +2,7 @@
 module(
     name = "dagger",
     version = "2.52",
-    compatibility_level = 252,
+    compatibility_level = 205200,
 )
 
 DAGGER_JAVA_ARTIFACTS = [
@@ -22,9 +22,9 @@ bazel_dep(name = "rules_jvm_external", version = "6.8")
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 maven.install(
-    name = "dagger_maven_252",
+    name = "dagger_maven_205200",
     artifacts = DAGGER_JAVA_ARTIFACTS,
     repositories = MAVEN_REPOSITORIES,
     strict_visibility = True,
 )
-use_repo(maven, "dagger_maven_252")
+use_repo(maven, "dagger_maven_205200")
