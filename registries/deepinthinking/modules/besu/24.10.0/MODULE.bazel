@@ -1,6 +1,6 @@
 """ Hyperledger Besu """
 module(
-    name = "hyperledger-besu",
+    name = "besu",
     version = "24.10.0",
     compatibility_level = 24100,
 )
@@ -144,8 +144,8 @@ MAVEN_REPOSITORIES = [
 
 bazel_dep(name = "rules_java", version = "8.16.1")
 bazel_dep(name = "rules_jvm_external", version = "6.8")
-bazel_dep(name = "google-dagger", version = "2.52")
-bazel_dep(name = "immutables-immutables", version = "2.10.1")
+bazel_dep(name = "dagger", version = "2.52")
+bazel_dep(name = "immutables", version = "2.10.1")
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 
