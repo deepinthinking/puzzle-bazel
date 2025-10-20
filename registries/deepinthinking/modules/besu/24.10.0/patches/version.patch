@@ -1,5 +1,5 @@
 diff --git a/besu/src/main/java/org/hyperledger/besu/BesuInfo.java b/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
-index 94414ee5f7..03afcd4711 100644
+index 94414ee5f7..0403c14675 100644
 --- a/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
 +++ b/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
 @@ -28,7 +28,7 @@ import java.util.jar.Manifest;
@@ -7,12 +7,12 @@ index 94414ee5f7..03afcd4711 100644
  public final class BesuInfo {
    private static final String CLIENT = "besu";
 -  private static final String VERSION = BesuInfo.class.getPackage().getImplementationVersion();
-+  public static final String VERSION = "24.10.0";
++  private static final String VERSION = "24.10.0";
    private static final String OS = PlatformDetector.getOS();
    private static final String VM = PlatformDetector.getVM();
    private static final String COMMIT;
 diff --git a/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java b/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
-index abaa127270..00dfbaab18 100644
+index abaa127270..67bc24a85a 100644
 --- a/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
 +++ b/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
 @@ -321,7 +321,7 @@ public class ConfigurationOverviewBuilder {
@@ -20,7 +20,7 @@ index abaa127270..00dfbaab18 100644
    public String build() {
      final List<String> lines = new ArrayList<>();
 -    lines.add("Besu version " + BesuInfo.class.getPackage().getImplementationVersion());
-+    lines.add("Besu version " + BesuInfo.VERSION);
++    lines.add("Besu version " + BesuInfo.shortVersion());
      lines.add("");
      lines.add("Configuration:");
 
