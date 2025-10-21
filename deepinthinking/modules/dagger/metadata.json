@@ -1,0 +1,19 @@
+{
+  "homepage": "https://github.com/gogole/dagger",
+  "maintainers": [
+      {
+          "email": "tingyan.shen@gmail.com",
+          "github": "tingyanshen",
+          "github_user_id": 81901872,
+          "name": "Tingyan Shen"
+      }
+  ],
+  "repository": [
+      "github:google/dagger"
+  ],
+  "versions": [
+      "2.45",
+      "2.52"
+  ],
+  "yanked_versions": {}
+}
