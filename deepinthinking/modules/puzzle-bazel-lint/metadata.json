@@ -1,0 +1,18 @@
+{
+  "homepage": "https://github.com/deepinthinking/puzzle-bazel",
+  "maintainers": [
+      {
+          "email": "tingyan.shen@gmail.com",
+          "github": "tingyanshen",
+          "github_user_id": 81901872,
+          "name": "Tingyan Shen"
+      }
+  ],
+  "repository": [
+      "github:deepinthinking/puzzle-bazel"
+  ],
+  "versions": [
+      "2025.0.0-SNAPSHOT"
+  ],
+  "yanked_versions": {}
+}

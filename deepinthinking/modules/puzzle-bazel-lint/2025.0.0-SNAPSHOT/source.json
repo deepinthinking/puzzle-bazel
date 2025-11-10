@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/deepinthinking/puzzle-bazel/archive/refs/heads/main.zip",
+  "integrity": "",
+  "strip_prefix": "puzzle-bazel-main",
+  "patch_strip": 0,
+  "overlay": {
+    "MODULE.bazel": ""
+  }
+}
