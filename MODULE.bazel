@@ -39,3 +39,5 @@ multiple_version_override(
         "24.10.0",
     ],
 )
+
+bazel_dep(name = "puzzle-bazel-lint", version = "2025.0.0-SNAPSHOT")
