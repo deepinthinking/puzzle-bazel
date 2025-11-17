@@ -1,0 +1,19 @@
+{
+  "homepage": "https://github.com/immutables/immutables",
+  "maintainers": [
+      {
+          "email": "tingyan.shen@gmail.com",
+          "github": "tingyanshen",
+          "github_user_id": 81901872,
+          "name": "Tingyan Shen"
+      }
+  ],
+  "repository": [
+      "github:immutables/immutables"
+  ],
+  "versions": [
+      "2.9.3",
+      "2.10.1"
+  ],
+  "yanked_versions": {}
+}

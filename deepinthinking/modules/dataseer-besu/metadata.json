@@ -1,0 +1,18 @@
+{
+  "homepage": "https://github.com/deepinthinking/dataseer-besu",
+  "maintainers": [
+    {
+      "email": "tingyan.shen@gmail.com",
+      "github": "tingyanshen",
+      "github_user_id": 81901872,
+      "name": "Tingyan Shen"
+    }
+  ],
+  "repository": [
+    "github:deepinthinking/dataseer-besu"
+  ],
+  "versions": [
+    "2025.0.0-SNAPSHOT"
+  ],
+  "yanked_versions": {}
+}
