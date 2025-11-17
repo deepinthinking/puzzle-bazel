@@ -40,4 +40,5 @@ multiple_version_override(
     ],
 )
 
+bazel_dep(name = "dataseer-besu", version = "2025.0.0-SNAPSHOT")
 bazel_dep(name = "puzzle-bazel-lint", version = "2025.0.0-SNAPSHOT")

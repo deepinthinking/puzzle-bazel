@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/deepinthinking/dataseer-besu/archive/refs/heads/main.zip",
+  "integrity": "",
+  "strip_prefix": "dataseer-besu-main",
+  "overlay": {
+    "MODULE.bazel": ""
+  }
+}
